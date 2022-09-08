@@ -4,11 +4,11 @@ class Bot
   attr_reader :x,
               :y 
   def initialize(grid)
-    @x = find_bot(grid)
-    @y = find_bot(grid)
+    @x = bot_coords(grid)
+    @y = bot_coords(grid)
   end
 
-  def find_bot(grid)
+  def bot_coords(grid)
     (grid.size - 1) / 2
   end
 end
