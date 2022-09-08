@@ -23,7 +23,6 @@ RSpec.describe Grid do
       expect {Grid.new(101, ["---", "-m-", "p--"])}.to raise_error(ArgumentError)
     end
 
-    
     it 'returns an error if grid size is less than 3' do 
       expect {Grid.new(1, ["-", "m", "p"])}.to raise_error(ArgumentError)
     end
@@ -39,7 +38,6 @@ RSpec.describe Grid do
     it 'doesnt return error for correct size grids over 3' do 
       expect { Grid.new(5, ["-----", "-----", "--m--","-----", "p----"]) }.not_to raise_error
     end
-
   end
 end
 
