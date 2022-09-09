@@ -4,7 +4,7 @@ class Princess
   attr_reader :x,
               :y
   def initialize(grid)
-    @x = grid.find_princess[0]
-    @y = grid.find_princess[1]
+    @x = grid.find_element('p')[0]
+    @y = grid.find_element('p')[1]
   end
 end

@@ -1,6 +1,6 @@
+require 'spec_helper'
 require_relative '../lib/princess'
 require_relative '../lib/grid'
-require 'rspec'
 
 RSpec.describe Princess do 
   let(:grid) { Grid.new(3, ["---", "-m-", "p--"]) } 
