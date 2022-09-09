@@ -90,6 +90,15 @@ To install locally, in the command line run:
 * cd bot_saves_princess 
 * bundle install 
 
+To run the test suit, in the command line run:
+
+* bundle exec rspec save_princess/spec
+* bundle exec rspec save_princess_2/spec
+
+To open the Simplecov report, in the command line run: 
+
+* open coverage/index.html
+
 #### Ruby Runner 
 
 To play Bot Saves Princess after installing locally, in the command line run: 
