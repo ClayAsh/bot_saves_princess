@@ -50,12 +50,12 @@ To complete the challenge you must return the next move the bot will take to res
 <img width="272" alt="Screen Shot 2022-09-09 at 2 06 11 PM" src="https://user-images.githubusercontent.com/99059063/189434580-0b04b2ab-6278-4a36-bb09-8d784d30b1c6.png">
 <br>
 
-### Built With
+### Tools Used 
 
+BUILT WITH 
   * [Ruby v2.7.4](https://www.ruby-lang.org/en/)
 
-### Tested With
-
+TESTED WITH
 * [RSpec v3.11](https://rspec.info/)
 * [Pry](https://pry.github.io/)
 * [Simplecov](https://github.com/simplecov-ruby/simplecov)
