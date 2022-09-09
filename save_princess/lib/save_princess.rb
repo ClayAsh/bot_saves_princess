@@ -1,6 +1,4 @@
 require_relative 'grid'
-require_relative 'bot'
-require_relative 'princess'
 
 class SavePrincess 
   attr_accessor :grid,

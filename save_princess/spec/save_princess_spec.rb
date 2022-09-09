@@ -1,6 +1,4 @@
 require 'spec_helper'
-require_relative '../lib/bot'
-require_relative '../lib/princess'
 require_relative '../lib/grid'
 require_relative '../lib/save_princess'
 
