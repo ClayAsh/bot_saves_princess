@@ -18,5 +18,19 @@ RSpec.describe Grid do
       expect(grid.find_element('p')).to eq([2, 0])
     end
   end
+
+  describe 'sad path' do 
+    it 'returns error if grid size is over 100' do 
+      expect { Grid.new(101, 2, 3, ["-----", "-----", "p--m-", "-----", "-----"]) }
+    end
+
+    it 'returns an error if grid size and grid do not match' do 
+      expect {Grid.new(3, 2, 3, ["-----", "-----", "p--m-", "-----", "-----"])}.to raise_error(ArgumentError) 
+    end
+
+    it 'returns error if bot coordinates do not match grid' do 
+      expect {Grid.new(3, 0, 0, ["-----", "-----", "p--m-", "-----", "-----"])}.to raise_error(ArgumentError)
+    end
+  end
 end
 
