@@ -1,6 +1,6 @@
 require_relative 'lib/save_princess'
 
-puts "Please enter a number between 3 & 100 to choose the grid size."
+puts "Please enter an odd number between 3 & 100 to choose the grid size."
 grid_size = gets.chomp.to_i
 grid = []
 row = 1
