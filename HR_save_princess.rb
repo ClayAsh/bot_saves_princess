@@ -68,7 +68,7 @@ def displayPathtoPrincess(n,grid)
   new_grid = Grid.new(n, grid)
   new_game = SavePrincess.new(new_grid)
   new_game.find_path.each do |e|
-    p e
+    print e.concat("\n")
   end
 end
 
