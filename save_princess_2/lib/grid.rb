@@ -8,6 +8,9 @@ class Grid
     @bot      = [bot_x, bot_y] 
     @grid     = grid
     @princess = find_element('p')
+    raise ArgumentError, "Please enter a number less than 100." unless size <= 100
+    raise ArgumentError, "Please enter the correct number of columns for your grid size." unless grid.all? {|e| e.length == size} == true
+    raise ArgumentError, "Please place 'm' in the coordinates you entered for the bot." unless [bot_x, bot_y] == find_element('m')
   end
 
   def find_element(e) 

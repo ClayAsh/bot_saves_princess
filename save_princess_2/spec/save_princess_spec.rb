@@ -3,10 +3,10 @@ require_relative '../lib/grid'
 require_relative '../lib/save_princess'
 
 RSpec.describe SavePrincess do 
-  let(:grid) { Grid.new(3, 2, 3, ["-----", "-----", "p--m-", "-----", "-----"]) }  
-  let(:grid2) { Grid.new(3, 2, 2, ["-----", "-----", "--m-p", "-----", "-----"]) }  
-  let(:grid3) { Grid.new(3, 2, 2, ["-----", "--p--", "--m--", "-----", "-----"]) }  
-  let(:grid4) { Grid.new(3, 2, 2, ["-----", "-----", "---m-", "--p-", "-----"]) }  
+  let(:grid) { Grid.new(5, 2, 3, ["-----", "-----", "p--m-", "-----", "-----"]) }  
+  let(:grid2) { Grid.new(5, 2, 2, ["-----", "-----", "--m-p", "-----", "-----"]) }  
+  let(:grid3) { Grid.new(5, 2, 2, ["-----", "--p--", "--m--", "-----", "-----"]) }  
+  let(:grid4) { Grid.new(5, 2, 3, ["-----", "-----", "---m-", "---p-", "-----"]) }  
   let(:sp) { SavePrincess.new(grid) }
   let(:sp2) { SavePrincess.new(grid2) }
   let(:sp3) { SavePrincess.new(grid3) }
