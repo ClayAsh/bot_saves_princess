@@ -35,16 +35,16 @@ class SavePrincess
     if @bot[0] != @princess[0]
       index_column = @bot[0] - @princess[0] 
       if index_column.positive? 
-        p "UP"
+        print "UP"
       elsif index_column.negative? 
-        p "DOWN"
+        print "DOWN"
       end 
     elsif @bot[1] != @princess[1] 
       index_row = @bot[1] - @princess[1]
       if index_row.positive? 
-        p "LEFT"
+        print "LEFT"
       elsif index_row.negative? 
-        p "RIGHT"
+        print "RIGHT"
       end
     end 
   end
