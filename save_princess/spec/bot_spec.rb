@@ -1,5 +1,5 @@
+require 'spec_helper'
 require_relative '../lib/bot/'
-require 'rspec'
 
 RSpec.describe Bot do 
   let(:grid) { Grid.new(3, ["---", "-m-", "p--"]) } 
