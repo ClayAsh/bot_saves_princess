@@ -23,16 +23,4 @@ class Grid
     end
     coordinates
   end   
-
-  # def place_princess(size, bot)
-  #    princess = []
-  #   2.times do 
-  #     princess << rand(0..(size - 1))  
-  #   end 
-  #   if princess != bot 
-  #     @princess = princess 
-  #   else 
-  #     place_princess(size, bot)
-  #   end 
-  # end
 end
