@@ -13,6 +13,12 @@ class SavePrincess
   end
 
   def find_path 
+    find_verticle_move 
+    find_horizontal_move 
+    @moves 
+  end
+
+  def find_vertical_move
     index_column = @bot[0] - @princess[0] 
     if index_column.positive? 
       index_column.times do 
@@ -23,6 +29,9 @@ class SavePrincess
         @moves << "DOWN"
       end
     end 
+  end
+
+  def find_horizontal_move
     index_row = @bot[1] - @princess[1]
     if index_row.positive? 
     index_row.times do 
@@ -33,6 +42,5 @@ class SavePrincess
         @moves << "RIGHT"
       end
     end
-    @moves
-  end
+  end 
 end 
