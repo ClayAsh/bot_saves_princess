@@ -13,7 +13,7 @@ class SavePrincess
   end
 
   def find_path 
-    find_verticle_move 
+    find_vertical_move 
     find_horizontal_move 
     @moves 
   end
