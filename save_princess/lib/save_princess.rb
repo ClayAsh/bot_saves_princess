@@ -22,7 +22,7 @@ class SavePrincess
     index_column = @bot[0] - @princess[0] 
     if index_column.positive? 
       index_column.times do 
-       @moves << "UP"
+        @moves << "UP"
       end
     elsif index_column.negative? 
       (index_column * -1).times do
@@ -34,8 +34,8 @@ class SavePrincess
   def find_horizontal_move
     index_row = @bot[1] - @princess[1]
     if index_row.positive? 
-    index_row.times do 
-      @moves << "LEFT"
+      index_row.times do 
+        @moves << "LEFT"
       end
     elsif index_row.negative? 
       (index_row * -1).times do
